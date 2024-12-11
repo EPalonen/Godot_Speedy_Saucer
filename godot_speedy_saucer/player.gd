@@ -1,11 +1,16 @@
 extends RigidBody2D
 
+var force = 800
 
+func	_ready():
+	var additional_result = add(33,36)
+	print(additional_result)
+	
 	
 func _physics_process(delta):
-	var force = 800
-	
-		
+	player_movement()
+
+func player_movement():
 	if Input.is_action_pressed("move_right"):
 		apply_force(Vector2(force, 0))
 		
@@ -17,12 +22,11 @@ func _physics_process(delta):
 
 	if Input.is_action_pressed("move_down"):
 		apply_force(Vector2(0, force))
-
-#
-#func	_ready():
-	#var test = 5	
-	#
-#
+		
+func add(argument1, argument2):
+	return argument1 + argument2
+	
+	
 	#var message = "Hell3o"
 	#if message == "Hello":
 		#print("Hi there! You said Hello!")
