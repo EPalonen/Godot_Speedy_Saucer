@@ -16,3 +16,7 @@ texture = ExtResource("1_y72gy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_r4fyj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_offset = 1.0
+drag_vertical_offset = 1.0
