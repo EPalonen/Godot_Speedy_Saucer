@@ -8,6 +8,7 @@ radius = 46.2709
 
 [node name="Player" type="RigidBody2D"]
 position = Vector2(298, 206)
+gravity_scale = 0.0
 script = ExtResource("1_g0rh4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
